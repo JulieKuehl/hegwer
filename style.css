@@ -205,6 +205,10 @@ object {
 
 /* Hey, if you don't need my comments anymore, just delete me! :)  */
 
+/*
+* HEADER STYLES
+*/
+
 #masthead {
 	background: #122748;
 }
@@ -257,4 +261,27 @@ object {
 
 .navbar-default .navbar-nav > li > a:hover {
 	color: #d6651b;
+}
+
+/*
+* FOOTER STYLES
+*/
+
+.site-footer {
+	background: #122748;
+	min-height: 75px;
+	color: #e3e3e3;
+}
+
+.site-footer a {
+	color: #d6651b;
+	text-decoration: none;
+}
+
+.site-footer a:hover {
+	color: #d53e34;
+}
+
+.site-info {
+	margin: 20px 0;
 }
