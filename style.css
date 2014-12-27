@@ -316,3 +316,22 @@ object {
 	height: 400px;
 	color: #e3e3e3;
 }
+
+/*
+* SIDEBAR
+*/
+
+.sidebar {
+	background: #122748;
+	color: #e3e3e3;
+	padding: 30px 20px;
+}
+
+.sidebar a {
+	color: #d6651b;
+}
+
+.sidebar li a:hover {
+	background: #122748;
+	color: #d53e34;
+}
