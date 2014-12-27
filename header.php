@@ -21,7 +21,7 @@
 	<?php do_action( 'before' ); ?>
 	
 <header id="masthead" class="site-header" role="banner">
-	<div class="container">
+	<div class="container superheader">
 		<div class="row">
 			<div class="superheader col-sm-12">
 				<span class="phone alignright"><a href="+14154485107">(415) 448-5107</a></span>

@@ -146,3 +146,34 @@ require get_template_directory() . '/includes/jetpack.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/includes/bootstrap-wp-navwalker.php';
+
+
+/*
+ * CUSTOMIZATIONS
+ */
+
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function hegwer_widgets_init() {
+
+	register_sidebar( array(
+		'name' => 'Home page column one',
+		'id' => 'home-column-1',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h2 class="rounded">',
+		'after_title' => '</h2>',
+	) );
+	register_sidebar( array(
+		'name' => 'Home page column two',
+		'id' => 'home-column-2',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h2 class="rounded">',
+		'after_title' => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'hegwer_widgets_init' );
+?>

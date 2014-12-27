@@ -213,6 +213,12 @@ object {
 	background: #122748;
 }
 
+.superheader {
+	/*background-color: #5e5e5e;*/
+	padding: 0 15px;
+	line-height: 1;
+}
+
 .site-title {
 	text-transform: uppercase;
 }
@@ -310,8 +316,9 @@ object {
 */
 
 .jumbotron {
-	background-image: url( "../hegwer/images/legal-scale-filtered_30.jpeg" );
-	background-size: contain;
+	background-color: #122748;
+	background-image: url( "../hegwer/images/jumbotron-hero.jpeg" );
+	background-size: cover;
 	height: 400px;
 	color: #e3e3e3;
 }
@@ -333,4 +340,12 @@ object {
 .sidebar li a:hover {
 	background: #122748;
 	color: #d53e34;
+}
+
+/*
+* HOME PAGE WIDGETS
+*/
+
+.hentry {
+	margin-bottom: 0;
 }
