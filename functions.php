@@ -92,10 +92,12 @@ add_action( 'widgets_init', '_tk_widgets_init' );
  * Enqueue scripts and styles
  */
 function _tk_scripts() {
-	wp_enqueue_style( '_tk-style', get_stylesheet_uri() );
 
 	// load bootstrap css
 	wp_enqueue_style( '_tk-bootstrap', get_template_directory_uri() . '/includes/resources/bootstrap/css/bootstrap.css' );
+
+	// load theme css
+	wp_enqueue_style( '_tk-style', get_stylesheet_uri() );
 	
 	// load bootstrap js
 	wp_enqueue_script('_tk-bootstrapjs', get_template_directory_uri().'/includes/resources/bootstrap/js/bootstrap.js', array('jquery') );

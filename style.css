@@ -212,3 +212,49 @@ object {
 .site-title {
 	text-transform: uppercase;
 }
+
+.site-title a {
+	color: #e3e3e3;
+}
+
+.site-title a:hover {
+	color: #d6651b;
+	text-decoration: none;
+}
+
+.navbar {
+	margin: 22px 0 0 0;
+}
+
+.navbar-nav {
+	float: right;
+}
+
+.navbar-default {
+	background: inherit;
+	border: none;
+	color: #e3e3e3;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.navbar-default a {
+	color: #e3e3e3;
+}
+
+.navbar-default a:hover {
+	color: #d6651b;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #d6651b;
+	background-color: inherit;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #e3e3e3;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #d6651b;
+}
