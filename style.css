@@ -215,6 +215,7 @@ object {
 
 .site-title {
 	text-transform: uppercase;
+	padding-top: 30px;
 }
 
 .site-title a {
@@ -224,6 +225,23 @@ object {
 .site-title a:hover {
 	color: #d6651b;
 	text-decoration: none;
+}
+
+.phone {
+	float: right;
+	color: #e3e3e3;
+	font-weight: 900;
+	font-size: 1.2em;
+	padding: 10px 0 0 0;
+}
+
+.phone a {
+	color: #e3e3e3;
+	text-decoration: none;
+}
+
+.phone a:hover {
+	color: #d6651b;
 }
 
 .navbar {
@@ -262,6 +280,7 @@ object {
 .navbar-default .navbar-nav > li > a:hover {
 	color: #d6651b;
 }
+
 
 /*
 * FOOTER STYLES

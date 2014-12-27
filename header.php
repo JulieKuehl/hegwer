@@ -35,11 +35,12 @@
 				
 				<div class="site-branding">
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-<!--					<h4 class="site-description">--><?php //bloginfo( 'description' ); ?><!--</h4>-->
+
 				</div><!-- .site-branding -->
 						
 			</div><!-- .site-header-inner -->
 
+			<span class="phone alignright"><a href="+14154485107">(415) 448-5107</a></span
 			<nav class="site-navigation">
 				<div class="site-navigation-inner col-sm-7">
 					<div class="navbar navbar-default">
