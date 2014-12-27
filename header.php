@@ -76,6 +76,16 @@
 	</div><!-- .container -->
 </header><!-- #masthead -->
 
+	<div class="jumbotron">
+		<div class="container">
+			<p><em>If you're injured on the job,<br />
+			there's only one name you need to know.</em></p>
+			<br />
+			<br />
+			<h1>DANIEL HEGWER.</h1>
+		</div>
+	</div>
+
 <div class="main-content">	
 	<div class="container">
 		<div class="row">

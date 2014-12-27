@@ -304,3 +304,15 @@ object {
 .site-info {
 	margin: 20px 0;
 }
+
+
+/*
+* JUMBOTRON
+*/
+
+.jumbotron {
+	background-image: url( "../hegwer/images/legal-scale-filtered_30.jpeg" );
+	background-size: contain;
+	height: 400px;
+	color: #e3e3e3;
+}
