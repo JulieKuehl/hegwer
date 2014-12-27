@@ -23,6 +23,14 @@
 <header id="masthead" class="site-header" role="banner">
 	<div class="container">
 		<div class="row">
+			<div class="superheader col-sm-12">
+				<span class="phone alignright"><a href="+14154485107">(415) 448-5107</a></span>
+			</div><!-- .superheader -->
+		</div><!-- .row -->
+	</div><!-- .container -->
+
+	<div class="container">
+		<div class="row">
 			<div class="site-header-inner col-sm-5">
 					
 				<?php $header_image = get_header_image();
@@ -40,7 +48,6 @@
 						
 			</div><!-- .site-header-inner -->
 
-			<span class="phone alignright"><a href="+14154485107">(415) 448-5107</a></span
 			<nav class="site-navigation">
 				<div class="site-navigation-inner col-sm-7">
 					<div class="navbar navbar-default">
@@ -78,9 +85,10 @@
 
 	<div class="jumbotron">
 		<div class="container">
-			<p><em>If you're injured on the job,<br />
-			there's only one name you need to know.</em></p>
-			<br />
+			<span style="font-size:1.4em;">
+				<p><em>If you're injured on the job,<br />
+				there's only one name you need to know.</em></p>
+			</span>
 			<br />
 			<h1>DANIEL HEGWER.</h1>
 		</div>
