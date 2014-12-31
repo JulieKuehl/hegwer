@@ -13,6 +13,10 @@
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
+<!--	<div class="entry-image">-->
+<!--		--><?php //the_post_thumbnail( 'large' ); ?>
+<!--	</div>-->
+
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php
