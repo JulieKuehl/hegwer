@@ -66,7 +66,8 @@ function _tk_setup() {
 	 * This theme uses wp_nav_menu() in one location.
 	*/ 
     register_nav_menus( array(
-        'primary'  => __( 'Header bottom menu', '_tk' ),
+        'primary'   => __( 'Header bottom menu', '_tk' ),
+	    'footer'    => __( 'Footer menu', '_tk' ),
     ) );
 
 }
@@ -159,21 +160,94 @@ require get_template_directory() . '/includes/bootstrap-wp-navwalker.php';
 function hegwer_widgets_init() {
 
 	register_sidebar( array(
+		'name' => 'Superheader-phone number',
+		'id' => 'superheader-phone',
+		'before_widget' => '<div class="phone alignright">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => 'Jumbotron',
+		'id' => 'jumbotron',
+		'before_widget' => '<div class="jumbotron">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
 		'name' => 'Home page column one',
 		'id' => 'home-column-1',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
-		'before_title' => '<h2 class="rounded">',
-		'after_title' => '</h2>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
 	) );
 	register_sidebar( array(
 		'name' => 'Home page column two',
 		'id' => 'home-column-2',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
-		'before_title' => '<h2 class="rounded">',
-		'after_title' => '</h2>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => 'Blog sidebar',
+		'id' => 'sidebar-blog',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => 'Contact page sidebar',
+		'id' => 'sidebar-contact',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => 'Footer left',
+		'id' => 'footer-left',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => 'Footer right',
+		'id' => 'footer-right',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
 	) );
 }
 add_action( 'widgets_init', 'hegwer_widgets_init' );
-?>
+
+function hegwer_excerpt_length( $length ) {
+	return 150;
+}
+add_filter( 'excerpt_length', 'hegwer_excerpt_length', 999 );
+
+function hegwer_excerpt_more( $more ) {
+	return ' [...]<br /><a class="read-more btn-lg btn-read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More <span class="glyphicon glyphicon-arrow-right"></span>', 'your-text-domain') . '</a>';
+}
+add_filter( 'excerpt_more', 'hegwer_excerpt_more' );
+
+
+/**
+ * Register widgetized area and update sidebar with default widgets
+ */
+//function _tk_widgets_init() {
+//	register_sidebar( array(
+//		'name'          => __( 'Sidebar', '_tk' ),
+//		'id'            => 'sidebar-1',
+//		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+//		'after_widget'  => '</aside>',
+//		'before_title'  => '<h3 class="widget-title">',
+//		'after_title'   => '</h3>',
+//	) );
+//}
+//add_action( 'widgets_init', '_tk_widgets_init' );

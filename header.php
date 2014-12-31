@@ -21,10 +21,10 @@
 	<?php do_action( 'before' ); ?>
 	
 <header id="masthead" class="site-header" role="banner">
-	<div class="container superheader">
+	<div class="container">
 		<div class="row">
-			<div class="superheader col-sm-12">
-				<span class="phone alignright"><a href="+14154485107">(415) 448-5107</a></span>
+			<div class="superheader col-sm-6 col-sm-offset-6">
+				<?php dynamic_sidebar( 'superheader-phone' ); ?>
 			</div><!-- .superheader -->
 		</div><!-- .row -->
 	</div><!-- .container -->
@@ -40,12 +40,10 @@
 					</a>
 				<?php } // end if ( ! empty( $header_image ) ) ?>
 				
-				
 				<div class="site-branding">
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
 				</div><!-- .site-branding -->
-						
 			</div><!-- .site-header-inner -->
 
 			<nav class="site-navigation">
@@ -59,9 +57,6 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-
-							<!-- Your site title as branding in the menu -->
-<!--							<a class="navbar-brand" href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" title="--><?php //echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?><!--" rel="home">--><?php //bloginfo( 'name' ); ?><!--</a>-->
 						</div><!-- .navbar-header -->
 
 						<!-- The WordPress Menu goes here -->
@@ -83,15 +78,8 @@
 	</div><!-- .container -->
 </header><!-- #masthead -->
 
-	<div class="jumbotron">
-		<div class="container">
-			<span style="font-size:1.4em;">
-				<p><em>If you're injured on the job,<br />
-				there's only one name you need to know.</em></p>
-			</span>
-			<br />
-			<h1>DANIEL HEGWER.</h1>
-		</div>
+	<div>
+		<?php dynamic_sidebar( 'jumbotron' ); ?>
 	</div>
 
 <div class="main-content">	
@@ -102,4 +90,3 @@
 
 		<div class="row">
 			<div class="main-content-inner col-sm-12 col-md-8">
-

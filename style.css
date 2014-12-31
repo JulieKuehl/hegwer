@@ -206,6 +206,25 @@ object {
 /* Hey, if you don't need my comments anymore, just delete me! :)  */
 
 /*
+* TYPOGRAPHY
+*/
+body {
+	font-size: 16px;
+	line-height: 1.6em;
+	color: #545148;
+}
+
+a {
+	color: #545148;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #d53e34;
+	text-decoration: none;
+}
+
+/*
 * HEADER STYLES
 */
 
@@ -213,10 +232,16 @@ object {
 	background: #122748;
 }
 
+/*.site-header-inner {*/
+	/*position: fixed;*/
+/*}*/
+
 .superheader {
 	/*background-color: #5e5e5e;*/
 	padding: 0 15px;
 	line-height: 1;
+	color: #ffffff;
+	font-size: 0.8em;
 }
 
 .site-title {
@@ -228,7 +253,7 @@ object {
 }
 
 .site-title a:hover {
-	color: #d6651b;
+	color: #d66518;
 	text-decoration: none;
 }
 
@@ -246,9 +271,12 @@ object {
 }
 
 .phone a:hover {
-	color: #d6651b;
+	color: #d66518;
 }
 
+/*
+* NAVBAR
+*/
 .navbar {
 	margin: 22px 0 0 0;
 }
@@ -270,11 +298,11 @@ object {
 }
 
 .navbar-default a:hover {
-	color: #d6651b;
+	color: #d66518;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #d6651b;
+	color: #d66518;
 	background-color: inherit;
 }
 
@@ -283,7 +311,7 @@ object {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-	color: #d6651b;
+	color: #d66518;
 }
 
 
@@ -294,11 +322,12 @@ object {
 .site-footer {
 	background: #122748;
 	min-height: 75px;
+	font-size: 0.8em;
 	color: #e3e3e3;
 }
 
 .site-footer a {
-	color: #d6651b;
+	color: #d66518;
 	text-decoration: none;
 }
 
@@ -307,7 +336,49 @@ object {
 }
 
 .site-info {
-	margin: 20px 0;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.entry-meta {
+	margin: 30px 0;
+}
+
+.footer-right {
+	margin-top: 20px;
+	text-align: right;
+	line-height: 1.5em;
+}
+
+/*
+* FOOTER NAVBAR
+*/
+.footer-nav {
+	margin: 0;
+}
+
+.navbar-footer {
+	margin: 10px auto 0;
+	text-transform: capitalize;
+}
+
+.navbar-footer ul {
+	list-style: none;
+	text-align: center;
+	color: #e3e3e3;
+	padding: 0;
+	margin: 0;
+}
+
+.navbar-footer a {
+	text-decoration: none;
+	color: #e3e3e3;
+	display: block;
+}
+
+.navbar-footer li {
+	display: inline-block;
+	margin: 0 10px;
 }
 
 
@@ -334,12 +405,18 @@ object {
 }
 
 .sidebar a {
-	color: #d6651b;
+	color: #d66518;
 }
 
 .sidebar li a:hover {
 	background: #122748;
 	color: #d53e34;
+}
+
+.rounded {
+	text-transform: uppercase;
+	font-size: 1.5em;
+	font-weight: 700;
 }
 
 /*
@@ -348,4 +425,47 @@ object {
 
 .hentry {
 	margin-bottom: 0;
+}
+
+.widget-title {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+
+/*
+* GRAVITY FORMS
+*/
+#gform_submit_button_1 {
+	padding: 15px 40px 15px 40px;
+	background: #D66518;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	font-weight: 700;
+}
+
+/*
+* CTA BOX
+*/
+
+.cta-box {
+	margin: 50px 0 30px;
+	padding: 30px;
+	background: rgba(214,101,24,0.5);
+}
+
+/*
+* EXCERPTS
+*/
+.read-more {
+	line-height: 3em;
+}
+
+.btn-read-more {
+	background: rgba(214,101,24,0.5);
+}
+
+.nav-previous, .nav-next {
+	text-transform: uppercase;
 }

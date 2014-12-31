@@ -25,12 +25,12 @@ get_header(); ?>
 
 <?php endwhile; // end of the loop. ?>
 
-<div class="col-sm-6">
-	<?php dynamic_sidebar( 'home-column-1' ); ?>
-</div>
-<div class="col-sm-6">
-	<?php dynamic_sidebar( 'home-column-2' ); ?>
-</div>
+<!--<div class="col-sm-6">-->
+<!--	--><?php //dynamic_sidebar( 'home-column-1' ); ?>
+<!--</div>-->
+<!--<div class="col-sm-6">-->
+<!--	--><?php //dynamic_sidebar( 'home-column-2' ); ?>
+<!--</div>-->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
