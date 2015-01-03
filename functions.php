@@ -227,7 +227,7 @@ function hegwer_widgets_init() {
 add_action( 'widgets_init', 'hegwer_widgets_init' );
 
 function hegwer_excerpt_length( $length ) {
-	return 150;
+	return 55;
 }
 add_filter( 'excerpt_length', 'hegwer_excerpt_length', 999 );
 

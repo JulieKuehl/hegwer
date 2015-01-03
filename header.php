@@ -23,15 +23,15 @@
 <header id="masthead" class="site-header" role="banner">
 	<div class="container">
 		<div class="row">
-			<div class="superheader col-sm-12 col-md-6 col-md-offset-6">
+			<div class="superheader col-xs-12 col-md-6 col-md-offset-6">
 				<?php dynamic_sidebar( 'superheader-info' ); ?>
 			</div><!-- .superheader -->
 		</div><!-- .row -->
 	</div><!-- .container -->
 
 	<div class="container">
-		<div class="row">
-			<div class="site-header-inner col-sm-5">
+		<div class="row site-fixed-header">
+			<div class="site-header-inner col-xs-10 col-md-5">
 					
 				<?php $header_image = get_header_image();
 				if ( ! empty( $header_image ) ) { ?>
@@ -47,7 +47,7 @@
 			</div><!-- .site-header-inner -->
 
 			<nav class="site-navigation">
-				<div class="site-navigation-inner col-sm-7">
+				<div class="site-navigation-inner col-md-7">
 					<div class="navbar navbar-default">
 						<div class="navbar-header">
 							<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
