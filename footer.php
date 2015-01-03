@@ -31,9 +31,9 @@
 						<?php do_action( '_tk_credits' ); ?>
 						&copy; <?php echo date("Y") ?> <?php bloginfo( 'name' ); ?>
 						<span class="sep"> | </span>
-						<?php printf( __( 'Designed by %s',  '_tk' ), '<a href="http://forwardpushmedia.com/" rel="designer">Forward Push Media</a>' ); ?>
-						<span class="sep"> | </span>
-						<?php printf( __( 'Proudly powered by %s',  '_tk' ), '<a href="http://wordpress.org/" rel="generator">WordPress</a>' ); ?>
+						<?php printf( __( 'Law firm website design by %s',  '_tk' ), '<a href="http://forwardpushmedia.com/services/" rel="designer">Forward Push Media</a>' ); ?>
+<!--						<span class="sep"> | </span>-->
+<!--						--><?php //printf( __( 'Proudly powered by %s',  '_tk' ), '<a href="http://wordpress.org/" rel="generator">WordPress</a>' ); ?>
 				</div><!-- close .site-info -->
 			
 			</div><!-- close .site-footer-inner -->

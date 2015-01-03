@@ -23,8 +23,8 @@
 <header id="masthead" class="site-header" role="banner">
 	<div class="container">
 		<div class="row">
-			<div class="superheader col-sm-6 col-sm-offset-6">
-				<?php dynamic_sidebar( 'superheader-phone' ); ?>
+			<div class="superheader col-sm-12 col-md-6 col-md-offset-6">
+				<?php dynamic_sidebar( 'superheader-info' ); ?>
 			</div><!-- .superheader -->
 		</div><!-- .row -->
 	</div><!-- .container -->

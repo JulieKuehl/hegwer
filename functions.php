@@ -160,9 +160,9 @@ require get_template_directory() . '/includes/bootstrap-wp-navwalker.php';
 function hegwer_widgets_init() {
 
 	register_sidebar( array(
-		'name' => 'Superheader-phone number',
-		'id' => 'superheader-phone',
-		'before_widget' => '<div class="phone alignright">',
+		'name' => 'Superheader info',
+		'id' => 'superheader-info',
+		'before_widget' => '<div class="superheader-info">',
 		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',

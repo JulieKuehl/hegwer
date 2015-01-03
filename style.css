@@ -215,7 +215,7 @@ body {
 }
 
 a {
-	color: #545148;
+	color: #d53e34;
 	text-decoration: none;
 }
 
@@ -257,20 +257,20 @@ a:hover {
 	text-decoration: none;
 }
 
-.phone {
+.superheader-info {
 	float: right;
 	color: #e3e3e3;
 	font-weight: 900;
 	font-size: 1.2em;
-	padding: 10px 0 0 0;
+	padding: 10px 10px 0;
 }
 
-.phone a {
+.superheader-info a {
 	color: #e3e3e3;
 	text-decoration: none;
 }
 
-.phone a:hover {
+.superheader-info a:hover {
 	color: #d66518;
 }
 
@@ -468,4 +468,34 @@ a:hover {
 
 .nav-previous, .nav-next {
 	text-transform: uppercase;
+}
+
+
+/*
+* MEDIA QUERIES / RESPONSIVE DESIGN
+*/
+
+@media screen and (max-width: 991px) {
+	.superheader-info {
+		float: left;
+		padding-left: 0;
+		padding-right: 10px;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+
+	#jumbotron-tagline {
+		font-size: 0.8em;
+	}
+
+	#jumbotron-name {
+		font-size: 1.7em;
+	}
+
+	.navbar-toggle {
+		float: left;
+	}
+
 }
