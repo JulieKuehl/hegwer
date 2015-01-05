@@ -219,7 +219,7 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
+a:link, a:visited, a:hover, a:active {
 	color: #d53e34;
 	text-decoration: none;
 }
@@ -387,7 +387,7 @@ a:hover {
 
 .jumbotron {
 	background-color: #122748;
-	background-image: url( "../hegwer/images/jumbotron-hero.jpeg" );
+	background-image: url( "images/jumbotron-hero.jpeg" );
 	background-size: cover;
 	height: 400px;
 	color: #e3e3e3;
@@ -481,6 +481,11 @@ a:hover {
 
 @media screen and (max-width: 767px) {
 
+	.site-title {
+		font-size: 28px;
+		margin-left: 5%;
+	}
+
 	#jumbotron-tagline {
 		font-size: 0.8em;
 	}
@@ -495,16 +500,25 @@ a:hover {
 	
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 509px) {
 
 	#services-image {
 		display: none;
 	}
 
+	.site-title {
+		font-size: 24px;
+		margin-left: 10%;
+	}
+
+	#jumbotron-tagline {
+		font-size: 0.7em;
+	}
 }
 
 @media screen and (max-width: 443px) {
 	.col-xs-10 {
 		width: 75%;
 	}
+
 }
