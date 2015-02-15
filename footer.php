@@ -31,7 +31,8 @@
 						<?php do_action( '_tk_credits' ); ?>
 						&copy; <?php echo date("Y") ?> <?php bloginfo( 'name' ); ?>
 						<span class="sep"> | </span>
-						<?php printf( __( 'Law firm website design by %s',  '_tk' ), '<a href="http://forwardpushmedia.com/services/" rel="designer">Forward Push Media</a>' ); ?>
+						<a href="http://forwardpushmedia.com/services/" rel="designer">Law firm website design</a> by Forward Push Media
+
 <!--						<span class="sep"> | </span>-->
 <!--						--><?php //printf( __( 'Proudly powered by %s',  '_tk' ), '<a href="http://wordpress.org/" rel="generator">WordPress</a>' ); ?>
 				</div><!-- close .site-info -->
